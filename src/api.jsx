@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API=axios.create({
-    baseURL:"http://localhost:4300"
+    baseURL:"ec2-54-210-161-254.compute-1.amazonaws.com:4300"
 })
 
 export const getProducts=()=>API.get("/products")

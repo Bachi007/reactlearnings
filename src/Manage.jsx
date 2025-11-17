@@ -38,7 +38,8 @@ function Manage(){
         var updateNow=async()=>{
             console.log(pid)
           var response=  await updateProduct(pid,formProduct);
-          alert(response.data.status)
+          alert(response.data.staus)
+          fetchProducts()
         }
 
         useEffect(()=>{
